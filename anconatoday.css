@@ -333,4 +333,17 @@ footer{
     height:70vh;
     background: black;
 }
+@media screen and (max-width: 900px) {
 
+    /* navbar */
+    .navbar{
+        display:none;
+    }
+
+    .box-1, .box-2{
+        display: none;
+    }
+    .img-button{
+        display:flex;
+        justify-content: center;
+    }
