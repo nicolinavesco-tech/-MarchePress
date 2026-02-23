@@ -86,7 +86,10 @@ a{
     height: 20vh;
 }
 .logo-ancona{
-    width: 50%;
+  height: 100px;    
+  width: auto;
+  max-width: 100%;
+  display: block;
 }
 .button-header{
     display: flex;
