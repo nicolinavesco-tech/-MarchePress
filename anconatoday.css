@@ -149,12 +149,16 @@ a{
     margin-bottom:10px;
 }
 .notizie{
-    font-size: large;
+   
+    display: block;
+    font-size: 14px;
     font-weight: bold;
-    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     color: red;
-    margin-top:10px;
+    margin-top: 10px;
+    margin-bottom: 8px;
+    line-height: 1.2;
 }
+
 .style-paragraph{
     font-size: large;
     color:rgb(105, 105, 105);
@@ -274,34 +278,36 @@ a{
 
 /* Terza sezione */
 .row-section3{
-    height:160vh;
+    min-height:160vh;
 }
 .title-third-section{
     font-size:30px;
     border-bottom:2px solid black;
 }
-.first-line{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-.second-line{
+.first-line,
+.second-line,
+.third-line {
     display: flex;
     justify-content: center;
+    flex-wrap: wrap;
 }
-.third-line{
-    display: flex;
-    justify-content: center;
-    
-}
+
 .img-1, .img-2, .img-3, .img-4, .img-5, .img-6, .img-7, .img-8, .img-9, .img-10, .img-11, .img-12{
+    flex: 0 0 25%;
     display: flex;
     flex-direction: column;
-    width:20%;
-    padding:10px;
+    justify-content: flex-start;
+    width: 25%;
+    padding: 10px;
+    box-sizing: border-box;
 }
-.imgscale{
-    margin-top: 48px;
+
+.third-line h2,
+.second-line h2,
+.first-line h2 {
+    font-size: 18px;
+    line-height: 1.3;
+    margin: 0;
 }
 footer{
     height:70vh;
